@@ -1,0 +1,9 @@
+x = input()
+
+n = int(input())
+
+def repeatedStr(z, n):
+    x,y = divmod(n,len(z))
+    return z[:y].count("a")*(x+1) + z[y:].count("a")*x
+
+print(repeatedStr(x, n))
